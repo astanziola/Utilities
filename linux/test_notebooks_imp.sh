@@ -28,7 +28,7 @@ cd ~/scalable-recognition-with-a-vocabulary-tree
 
 # Run notebooks
 echo "Downloading data before measuring execution time"
-python cbir/download.py
+python cbir/download.py 2> /dev/null || exit 1
 start_time=$(date +%s)
 jupyter nbconvert --execute '_test_Scalable Recognition with a Vocabulary Tree copy.ipynb' --to python 2> /dev/null || exit 1
 end_time=`date +%s`
