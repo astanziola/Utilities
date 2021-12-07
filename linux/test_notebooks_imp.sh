@@ -1,4 +1,4 @@
-source "/home/dzubtsov/anaconda3/etc/profile.d/conda.sh"
+source "$HOME/anaconda3/etc/profile.d/conda.sh"
 
 # Test privacy notebooks
 echo "Test privacy notebooks (skipping Competition 2)"
